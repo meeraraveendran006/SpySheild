@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Privacy Guard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container welcome">
+        <h1>Welcome to Privacy Guard</h1>
+        <p>Your personal dashboard for monitoring camera & microphone access.</p>
+        <button onclick="goToDashboard()">Enter Dashboard</button>
+    </div>
+
+    <script>
+        function goToDashboard() {
+            window.location.href = "/dashboard";
+        }
+    </script>
+</body>
+</html>
